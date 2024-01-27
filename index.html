@@ -2,13 +2,209 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
-        <meta name="theme-color" content="#000000">
-        <link href=" " rel="stylesheet">
-        <title>Ramiro Zheng</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <title>Ramiro's portfolio</title>
+        <link href="index.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/25da3cf9d7.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <h1>Hello World</h1>
-        <p>I'm hosted with GitHub Pages.</p>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/IMG_5574.PNG" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#hearder"> Home</a></li>
+                        <li><a href="#about"> About</a></li>
+                        <li><a href="#services"> services</a></li>
+                        <li><a href="#portfolio"> Portfolio</a></li>
+                        <li><a href="#contact"> Contact</a></li>
+                        <i class="fa-regular fa-circle-xmark" onclick="closemenu"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Software Developer</p>
+                    <h1>Hi, my name is <span>Ramiro</span> Zheng</h1>
+                </div>
+            </div>
+        </div>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/IMG_8087.JPG" alt="user">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>There you are, can I write my profile now ????</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br> Designing Web</li>
+                                <li><span>Web Development</span><br>web app Development</li>
+                                <li><span>APP Development</span><br>Building iOS apps</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2022</span><br> I am super experienced</li>
+                                <li><span>2023</span><br>web app Development</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2022</span><br> I was super smart okey</li>
+                                <li><span>2023</span><br>web app Development</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Design</h2>
+                        <p>I am web Design</p>
+                        <a href="#"> Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-crop"></i>
+                        <h2>UI/UX Design</h2>
+                        <p>melisa has a mini small brain, i dont know what to do with her.
+                            I think she should take a bath, because she is nastyyyyy okey?
+                        </p>
+                        <a href="#"> Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-app-store"></i>
+                        <h2>APP Design</h2>
+                        <p>I am APP Design</p>
+                        <a href="#"> Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/App face.JPG" alt="">
+                        <div class="layer">
+                            <h3>Social Media App</h3>
+                            <p>the app connect you to talented people around the world. 
+                                download it from apple store.
+                            </p>
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/App face.JPG" alt="">
+                        <div class="layer">
+                            <h3>My App</h3>
+                            <p>the app connect you to talented people around the world. 
+                                download it from apple store.
+                            </p>
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/App face.JPG" alt="">
+                        <div class="layer">
+                            <h3>My App</h3>
+                            <p>the app connect you to talented people around the world. 
+                                download it from apple store.
+                            </p>
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="bott">See More</a>
+            </div>
+        </div>
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>  
+                        <p><i class="fa-regular fa-paper-plane"></i>contact@example.com</p>
+                        <p><i class="fa-solid fa-phone"></i>1231231234</p>
+                        <div class="social-icons">
+                            <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                            <a href=""><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <a href="images/App face.JPG" download class="bott bott2" >download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="bott bott2">Summit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>copyright by Ramiro</p>
+            </div>
+        </div>
+
+
+        <script>
+            var tablinks=document.getElementsByClassName("tab-links");
+            var tabcontents=document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classLists.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classLists.remove("active-tab");
+                }
+                event.currentTarget.classLists.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+            
+        </script>
+        <script>
+            var sidemenus = document.getElementById("sidemenu");
+            function openmenu(){
+                sidemenus.style.right = "0";
+            }
+            function closemenu(){
+                sidemenus.style.right = "-200px";
+            }
+        </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxHP-T7BNzvTbqOIopbIq7cDPx-WLQWXMAwsZNga9xfqt9qPtZE3IMxp76mu1_Oz1QEKg/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => console.log('Success!', response))
+                .then(response => {
+                    msg.innerHTML = "Message sent succefully"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
     </body>
 </html>
