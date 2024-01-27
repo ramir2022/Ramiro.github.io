@@ -40,7 +40,7 @@
                         <p>There you are, can I write my profile now ????</p>
                         <div class="tab-titles">
                             <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('experience')" >Experience</p>
                             <p class="tab-links" onclick="opentab('education')">Education</p>
                         </div>
                         <div class="tab-contents active-tab" id="skills">
@@ -52,14 +52,15 @@
                         </div>
                         <div class="tab-contents" id="experience">
                             <ul>
-                                <li><span>2022</span><br> I am super experienced</li>
+                                <li><span>2022</span><br> Designing Web</li>
                                 <li><span>2023</span><br>web app Development</li>
+                                <li><span>2024</span><br>Building iOS apps</li>
                             </ul>
                         </div>
                         <div class="tab-contents" id="education">
                             <ul>
-                                <li><span>2022</span><br> I was super smart okey</li>
-                                <li><span>2023</span><br>web app Development</li>
+                                <li><span>2018-2024</span><br> Designing Web</li>
+                                <li><span>2022</span><br>web app Development</li>
                             </ul>
                         </div>
                     </div>
@@ -161,23 +162,22 @@
             </div>
         </div>
 
-
         <script>
-            var tablinks=document.getElementsByClassName("tab-links");
-            var tabcontents=document.getElementsByClassName("tab-contents");
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
 
             function opentab(tabname){
                 for(tablink of tablinks){
-                    tablink.classLists.remove("active-link");
+                    tablink.classList.remove("active-link");
                 }
                 for(tabcontent of tabcontents){
-                    tabcontent.classLists.remove("active-tab");
+                    tabcontent.classList.remove("active-tab");
                 }
-                event.currentTarget.classLists.add("active-link");
+                event.currentTarget.classList.add("active-link");
                 document.getElementById(tabname).classList.add("active-tab");
             }
-            
         </script>
+
         <script>
             var sidemenus = document.getElementById("sidemenu");
             function openmenu(){
