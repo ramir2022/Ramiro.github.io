@@ -25,3 +25,5 @@ Push your changes to the main branch.
 Deploy your app:
 Run npm run deploy to deploy your app to the gh-pages branch.
 Go to your repository settings and specify the gh-pages branch as the source for your GitHub Pages site.
+
+To learn more: https://pages.github.com/?(null)
